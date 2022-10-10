@@ -1,0 +1,12 @@
+name: Greet
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: 'ubuntu-20.04'
+    steps:
+      - name: greet
+        run: echo "hello world"
